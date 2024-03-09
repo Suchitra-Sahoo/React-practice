@@ -1,23 +1,13 @@
-import logo from './logo.svg';
 import './App.css';
+import { default as Video, default as Video2 } from './components/video';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <div>hello</div>
+      <Video></Video>
+      <Video title="i have used props here"></Video>
+      <Video2 bgcolor="green" title="lady woman"></Video2> {/* Use Video2 component */}
     </div>
   );
 }
